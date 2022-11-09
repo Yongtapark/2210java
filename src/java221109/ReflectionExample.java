@@ -7,7 +7,9 @@ import java.lang.reflect.Method;
 public class ReflectionExample {
 
 	public static void main(String[] args) throws Exception {
-		Class clazz =Class.forName("java221104.Car");
+		//Class는 생성자가 private 형태
+		//public final class Class<T> extends object //실행시 객체의 정보 얻어옴
+		Class clazz =Class.forName("java221104.Car");//동적으로(실행시) 객체 얻어옴
 		
 		System.out.println("[클래스 이름]");
 		System.out.println(clazz.getName());
